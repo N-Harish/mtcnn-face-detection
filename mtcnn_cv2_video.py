@@ -7,8 +7,8 @@ import argparse
 
 
 ag = argparse.ArgumentParser()
-ag.add_argument("-v", "--video", required=True, default='../data/video_input/face.mp4', help="Enter the path of test video")
-ag.add_argument("-o", "--output", required=True, default='../data/video_output/mtcnn_face_fps.mp4', help="Enter the path of output video")
+ag.add_argument("-v", "--video", required=True, default='./face.mp4', help="Enter the path of test video")
+ag.add_argument("-o", "--output", required=True, default='./mtcnn_face_fps.mp4', help="Enter the path of output video")
 
 ap = vars(ag.parse_args())
 
